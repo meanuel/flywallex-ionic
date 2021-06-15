@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
 
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
     <!-- custom css -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -23,7 +26,6 @@
             <label class="most" for="check">
             <i class="fas fa-bars"></i>
         </label>
-            <h4>Dashboard</h4>
         </div>
 
         <div class="cont-nav">
@@ -95,10 +97,53 @@
                         <h3>jeespoping@gmail.com</h3>
                     </div>
                 </div>
+                <div id="drop" class="drop">
+                    <i class="far fa-user-circle"></i>
+                </div>
+                <ul id="target">
+                    <li class="owner">owner</li>
+                    <li><a href="#"><i class="fal fa-user-alt"></i>  Profile</a></li>
+                    <li><a href="#"><i class="far fa-life-ring"></i>  Help</a></li>
+                    <li><a href="#"><i class="fas fa-power-off"></i>  Log out</a></li>
+                </ul>
             </div>
+
+            <section>
+                <h1>Welcome to borderless payments.</h1>
+
+                <hr style="width: 100%; margin-top: 30px;">
+
+                <div class="box-c">
+                    <div class="box">
+                        <img srcset="https://static.airwallex.com/webapp/dashboard/v0.90.0/static/media/pre-verification-desktop.313bb2f9.svg" alt="" data-chromatic="ignore" data-test="verification_banner_desktop_image">
+                        <div class="info">
+                            <h2>Unlock the full power of Airwallex for your business</h2>
+                            <span>Complete your verification to access Airwallex Borderless Cards, Global accounts and more.</span>
+                        </div>
+                        <div class="info-2">
+                            <a href="#" class="btn-1">Complete verification</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         </div>
     </div>
 
 </body>
+<script>
+    flag = false;
+    $(document).ready(function() {
+        $('#drop').on("click", function() {
+            if (flag == false) {
+                $('#target').show();
+                flag = true;
+            } else {
+                $('#target').hide();
+                flag = false;
+            }
+        })
+    })
+</script>
 
 </html>

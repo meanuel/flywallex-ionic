@@ -276,6 +276,9 @@ nav ul li a h2 {
     .checkbtn {
         display: flex;
     }
+    .title {
+        margin-left: 60px !important;
+    }
     .cont-nav {
         left: -100%;
         position: fixed;
@@ -284,6 +287,9 @@ nav ul li a h2 {
     }
     #check:checked~.cont-nav {
         left: 0;
+    }
+    .profile {
+        display: none !important;
     }
 }
 
@@ -322,14 +328,13 @@ nav ul li a h2 {
 
 .profile {
     position: absolute;
-    left: calc(100% - 24px);
+    left: calc(100% - 40px);
     transform: translateX(-100%);
     top: 7px;
     display: flex;
     flex-direction: column;
     -webkit-box-pack: center;
     justify-content: center;
-    z-index: 5;
 }
 
 .profile-cont {
@@ -352,6 +357,7 @@ nav ul li a h2 {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+    margin-top: 10px;
 }
 
 .title ul::before {
@@ -362,4 +368,121 @@ nav ul li a h2 {
     width: 24px;
     right: 0px;
     content: "";
+}
+
+.drop {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    font-size: 33px;
+    padding: 10px;
+    margin-right: 10px;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.header ul {
+    position: absolute;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 16%) 0px 4px 16px 0px;
+    border-radius: 6px;
+    padding: 4px 0;
+    font-size: 14px;
+    right: 20px;
+    top: 50px;
+    transition: 0.5s;
+    display: none;
+}
+
+.header ul li,
+.owner {
+    color: rgb(235, 236, 240);
+    margin-left: 11px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    padding-bottom: 6px;
+    padding-top: 8px;
+}
+
+.owner {
+    border-bottom: 1px solid rgb(235, 236, 240);
+}
+
+.header ul li a {
+    color: black;
+}
+
+.header ul li a:hover {
+    color: purple;
+}
+
+section {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 40px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 1.5;
+    margin: 0px;
+}
+
+
+/* end */
+
+.box-c {
+    margin-top: 4rem;
+}
+
+.box {
+    display: flex;
+    padding: 0 2rem;
+    border: 1px solid rgb(232, 234, 237);
+    border-radius: 6px;
+    box-shadow: rgb(0 0 0 / 8%) 0px 0px 16px 0px;
+}
+
+.info {
+    margin: auto 20px;
+}
+
+.info-2 {
+    margin: auto 0;
+    min-width: 162.38px;
+}
+
+.btn-1 {
+    color: rgb(255, 255, 255);
+    background-color: rgb(97, 47, 255);
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    min-width: 150px;
+}
+
+@media (max-width:720px) {
+    .checkbtn {
+        display: flex;
+    }
+    .title {
+        margin-left: 60px !important;
+    }
+    .cont-nav {
+        left: -100%;
+        position: fixed;
+        height: 100vh;
+        top: 70px;
+    }
+    #check:checked~.cont-nav {
+        left: 0;
+    }
+    .profile {
+        display: none !important;
+    }
+    h1 {
+        font-size: 24px;
+    }
 }
