@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- font awesome -->
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.3/css/pro.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="root">
+        <!-- navbar -->
+        <input type="checkbox" id="check">
+        <div class="checkbtn">
+            <label class="most" for="check">
+            <i class="fas fa-bars"></i>
+        </label>
+        </div>
+
+        <div class="cont-nav">
+            <nav>
+                <!-- button nav -->
+                <div class="user">
+                    <button class="btn-nav">
+                    <div class="logito">
+                        <div class="content-logito">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 32 32"><g fill="none" fill-rule="evenodd"><path fill="#fff" d="M22,0 C23.1045695,0 24,0.8954305 24,2 L24,6 L30,6 C31.1045695,6 32,6.8954305 32,8 L32,30 C32,31.1045695 31.1045695,32 30,32 L2,32 C0.8954305,32 0,31.1045695 0,30 L0,8 C0,6.8954305 0.8954305,6 2,6 L8,6 L8,2 C8,0.8954305 8.8954305,0 10,0 L22,0 Z M25,20 L20,20 C20,21.1045695 19.1045695,22 18,22 L14,22 C12.8954305,22 12,21.1045695 12,20 L7,20 C5.9265078,20 4.90945451,19.7583563 4.00026701,19.3264957 L4,28 L28,28 L28.0007361,19.3260191 C27.0912936,19.7581785 26.073887,20 25,20 Z M28,10 L4,10 L4,13 C4,14.6568542 5.34314575,16 7,16 L25,16 C26.6568542,16 28,14.6568542 28,13 L28,10 Z M20,4 L12,4 L12,6 L20,6 L20,4 Z"></path></g></svg>
+                        </div>
+                    </div>
+                    <h3>jeespoping</h3>
+                </button>
+                </div>
+                <!-- end button nav -->
+
+                <!-- ul -->
+                <ul>
+                    <li>
+                        <a href="../dashboard/index.html">
+                            <span><i class="far fa-tachometer-alt"></i></span>
+                            <h2>Dashboard</h2>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="active" href="#">
+                            <span><i class="far fa-wallet"></i></span>
+                            <h2>Wallet</h2>
+                        </a>
+                    </li>
+                    <ul class="active-items">
+                        <li>
+                            <a href="../globalAccounts/index.html"> <i class="far fa-usd-circle"></i>. Global Accounts</a>
+                        </li>
+                        <li>
+                            <a href="#"> <i class="fas fa-circle-notch"></i>. Conversions</a>
+                        </li>
+                    </ul>
+                    <li>
+                        <a href="#">
+                            <span><i class="far fa-envelope-open-dollar"></i></span>
+                            <h2>Transfers</h2>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span><i class="far fa-link"></i></span>
+                            <h2>Connections</h2>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span><i class="far fa-store"></i></span>
+                            <h2>Account</h2>
+                        </a>
+                    </li>
+                </ul>
+                <!-- end ul -->
+
+                <!-- button bot -->
+                <div class="bot">
+                    <img style="width: 118px;" src="assets/logo-w.png" alt="">
+                </div>
+            </nav>
+        </div>
+        <!-- end navbar -->
+
+        <!-- header -->
+        <div class="content">
+            <div class="header">
+                <div class="title">
+                    <h2>Balances</h2>
+                </div>
+                <div class="profile">
+                    <div class="profile-cont">
+                        <h3>jeespoping@gmail.com</h3>
+                    </div>
+                </div>
+                <div id="drop" class="drop">
+                    <i class="far fa-user-circle"></i>
+                </div>
+                <ul id="target">
+                    <li class="owner">owner</li>
+                    <li><a href="#"><i class="fal fa-user-alt"></i>  Profile</a></li>
+                    <li><a href="#"><i class="far fa-life-ring"></i>  Help</a></li>
+                    <li><a href="#"><i class="fas fa-power-off"></i>  Log out</a></li>
+                </ul>
+            </div>
+
+            <section>
+
+                <div class="box">
+                    <div>
+                        <h2>$ 0.00 COP</h2>
+                        <span>Your total balance estimate in COP at 2021-06-20 16:16</span>
+                    </div>
+                    <button style="margin-left: auto;" class="btn-2">Add funds</button>
+                    <button style="margin-left: 0.5rem;" class="btn-2">Convert</button>
+                    <button style="margin-left: 0.5rem;" class="btn-1">Send money</button>
+                </div>
+
+                <hr style="width: 100%; margin-top: 30px;">
+
+                <div class="box-c">
+                    <div class="box" style="padding: 0 2rem">
+                        <img srcset="https://static.airwallex.com/webapp/dashboard/v0.90.0/static/media/pre-verification-desktop.313bb2f9.svg" alt="" data-chromatic="ignore" data-test="verification_banner_desktop_image">
+                        <div class="info">
+                            <h2>Unlock the full power of Airwallex for your business</h2>
+                            <span>Complete your verification to access Airwallex Borderless Cards, Global accounts and more.</span>
+                        </div>
+                        <div class="info-2">
+                            <a href="#" class="btn-1">Complete verification</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-c">
+                    <div class="box">
+                        <h2>Get the most out of your Airwallex wallet</h2>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <img src="https://static.airwallex.com/webapp/wallet/v1.22.0/static/media/Add.cfbf04f0.svg" style="height: 96px">
+                        <br>
+                        <span>Add funds to your wallet to get started making payments</span>
+                    </div>
+                    <div>
+                        <img src="https://static.airwallex.com/webapp/wallet/v1.22.0/static/media/Hold.bfb02890.svg" alt="" style="height: 96px">
+                        <br>
+                        <span>Hold balances in up to 11 currencies in your wallet</span>
+                    </div>
+                    <div>
+                        <img src="https://static.airwallex.com/webapp/wallet/v1.22.0/static/media/Customize.eb782093.svg" style="height: 96px">
+                        <br>
+                        <span>Customise your wallet to display the currencies you care about</span>
+                    </div>
+                </div>
+
+                <div class="box-c">
+                    <div class="box">
+                        <h2>Balances</h2>
+                    </div>
+                </div>
+                <table style="width: 100%;">
+                    <thead>
+                        <tr>
+                            <th>CURRENCY</th>
+                            <th>GLOBAL ACCOUNTS</th>
+                            <th>AVAILABLE BALANCE <a class="link" href="#"><i class="far fa-cog"></i></a></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="display: flex;">
+                                <img src="https://static.airwallex.com/webapp/wallet/v1.22.0/static/media/AU.fd35103a.svg" alt="AU" style="margin-right: 24px; height: 24px; width: 24px;">
+                                <div>
+                                    <h5>AUD</h5>
+                                    <span>Australian Dollar</span>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td style="display: flex;">
+                                <h5 style="margin-right: 1rem;">$0.00 AUD</h5>
+                                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 32 32" fill="#612FFF" square="16"><g fill="none" fill-rule="evenodd"><path fill="#612FFF" d="M4,12 C6.209139,12 8,13.790861 8,16 C8,18.209139 6.209139,20 4,20 C1.790861,20 0,18.209139 0,16 C0,13.790861 1.790861,12 4,12 Z M16,12 C18.209139,12 20,13.790861 20,16 C20,18.209139 18.209139,20 16,20 C13.790861,20 12,18.209139 12,16 C12,13.790861 13.790861,12 16,12 Z M28,12 C30.209139,12 32,13.790861 32,16 C32,18.209139 30.209139,20 28,20 C25.790861,20 24,18.209139 24,16 C24,13.790861 25.790861,12 28,12 Z"></path></g></svg></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="display: flex;">
+                                <img src="https://static.airwallex.com/webapp/wallet/v1.22.0/static/media/CA.a981585e.svg" alt="AU" style="margin-right: 24px; height: 24px; width: 24px;">
+                                <div>
+                                    <h5>CAD</h5>
+                                    <span>Canadian Dollar</span>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td style="display: flex;">
+                                <h5 style="margin-right: 1rem;">$0.00 CAD</h5>
+                                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 32 32" fill="#612FFF" square="16"><g fill="none" fill-rule="evenodd"><path fill="#612FFF" d="M4,12 C6.209139,12 8,13.790861 8,16 C8,18.209139 6.209139,20 4,20 C1.790861,20 0,18.209139 0,16 C0,13.790861 1.790861,12 4,12 Z M16,12 C18.209139,12 20,13.790861 20,16 C20,18.209139 18.209139,20 16,20 C13.790861,20 12,18.209139 12,16 C12,13.790861 13.790861,12 16,12 Z M28,12 C30.209139,12 32,13.790861 32,16 C32,18.209139 30.209139,20 28,20 C25.790861,20 24,18.209139 24,16 C24,13.790861 25.790861,12 28,12 Z"></path></g></svg></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="display: flex;">
+                                <img src="https://static.airwallex.com/webapp/wallet/v1.22.0/static/media/CN.6fabf847.svg" alt="AU" style="margin-right: 24px; height: 24px; width: 24px;">
+                                <div>
+                                    <h5>CNY</h5>
+                                    <span>Chinese Yuan</span>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td style="display: flex;">
+                                <h5 style="margin-right: 1rem;">¥0.00 CNY</h5>
+                                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 32 32" fill="#612FFF" square="16"><g fill="none" fill-rule="evenodd"><path fill="#612FFF" d="M4,12 C6.209139,12 8,13.790861 8,16 C8,18.209139 6.209139,20 4,20 C1.790861,20 0,18.209139 0,16 C0,13.790861 1.790861,12 4,12 Z M16,12 C18.209139,12 20,13.790861 20,16 C20,18.209139 18.209139,20 16,20 C13.790861,20 12,18.209139 12,16 C12,13.790861 13.790861,12 16,12 Z M28,12 C30.209139,12 32,13.790861 32,16 C32,18.209139 30.209139,20 28,20 C25.790861,20 24,18.209139 24,16 C24,13.790861 25.790861,12 28,12 Z"></path></g></svg></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="display: flex;">
+                                <img src="https://static.airwallex.com/webapp/wallet/v1.22.0/static/media/EU.20b6868c.svg" alt="AU" style="margin-right: 24px; height: 24px; width: 24px;">
+                                <div>
+                                    <h5>EUR</h5>
+                                    <span>Euro</span>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td style="display: flex;">
+                                <h5 style="margin-right: 1rem;">€0.00 EUR</h5>
+                                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 32 32" fill="#612FFF" square="16"><g fill="none" fill-rule="evenodd"><path fill="#612FFF" d="M4,12 C6.209139,12 8,13.790861 8,16 C8,18.209139 6.209139,20 4,20 C1.790861,20 0,18.209139 0,16 C0,13.790861 1.790861,12 4,12 Z M16,12 C18.209139,12 20,13.790861 20,16 C20,18.209139 18.209139,20 16,20 C13.790861,20 12,18.209139 12,16 C12,13.790861 13.790861,12 16,12 Z M28,12 C30.209139,12 32,13.790861 32,16 C32,18.209139 30.209139,20 28,20 C25.790861,20 24,18.209139 24,16 C24,13.790861 25.790861,12 28,12 Z"></path></g></svg></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="display: flex;">
+                                <img src="https://static.airwallex.com/webapp/wallet/v1.22.0/static/media/GB.edcc668e.svg" alt="AU" style="margin-right: 24px; height: 24px; width: 24px;">
+                                <div>
+                                    <h5>GBP</h5>
+                                    <span>Great Britain Pound</span>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td style="display: flex;">
+                                <h5 style="margin-right: 1rem;">£0.00 GBP</h5>
+                                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 32 32" fill="#612FFF" square="16"><g fill="none" fill-rule="evenodd"><path fill="#612FFF" d="M4,12 C6.209139,12 8,13.790861 8,16 C8,18.209139 6.209139,20 4,20 C1.790861,20 0,18.209139 0,16 C0,13.790861 1.790861,12 4,12 Z M16,12 C18.209139,12 20,13.790861 20,16 C20,18.209139 18.209139,20 16,20 C13.790861,20 12,18.209139 12,16 C12,13.790861 13.790861,12 16,12 Z M28,12 C30.209139,12 32,13.790861 32,16 C32,18.209139 30.209139,20 28,20 C25.790861,20 24,18.209139 24,16 C24,13.790861 25.790861,12 28,12 Z"></path></g></svg></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="display: flex;">
+                                <img src="https://static.airwallex.com/webapp/wallet/v1.22.0/static/media/HK.15403a28.svg" alt="AU" style="margin-right: 24px; height: 24px; width: 24px;">
+                                <div>
+                                    <h5>HKD</h5>
+                                    <span>Hong Kong Dollar</span>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td style="display: flex;">
+                                <h5 style="margin-right: 1rem;">$0.00 HKD</h5>
+                                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 32 32" fill="#612FFF" square="16"><g fill="none" fill-rule="evenodd"><path fill="#612FFF" d="M4,12 C6.209139,12 8,13.790861 8,16 C8,18.209139 6.209139,20 4,20 C1.790861,20 0,18.209139 0,16 C0,13.790861 1.790861,12 4,12 Z M16,12 C18.209139,12 20,13.790861 20,16 C20,18.209139 18.209139,20 16,20 C13.790861,20 12,18.209139 12,16 C12,13.790861 13.790861,12 16,12 Z M28,12 C30.209139,12 32,13.790861 32,16 C32,18.209139 30.209139,20 28,20 C25.790861,20 24,18.209139 24,16 C24,13.790861 25.790861,12 28,12 Z"></path></g></svg></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="display: flex;">
+                                <img src="https://static.airwallex.com/webapp/wallet/v1.22.0/static/media/JP.aff1cc74.svg" alt="AU" style="margin-right: 24px; height: 24px; width: 24px;">
+                                <div>
+                                    <h5>JPY</h5>
+                                    <span>Japanese Yen</span>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td style="display: flex;">
+                                <h5 style="margin-right: 1rem;">¥0 JPY</h5>
+                                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 32 32" fill="#612FFF" square="16"><g fill="none" fill-rule="evenodd"><path fill="#612FFF" d="M4,12 C6.209139,12 8,13.790861 8,16 C8,18.209139 6.209139,20 4,20 C1.790861,20 0,18.209139 0,16 C0,13.790861 1.790861,12 4,12 Z M16,12 C18.209139,12 20,13.790861 20,16 C20,18.209139 18.209139,20 16,20 C13.790861,20 12,18.209139 12,16 C12,13.790861 13.790861,12 16,12 Z M28,12 C30.209139,12 32,13.790861 32,16 C32,18.209139 30.209139,20 28,20 C25.790861,20 24,18.209139 24,16 C24,13.790861 25.790861,12 28,12 Z"></path></g></svg></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="display: flex;">
+                                <img src="https://static.airwallex.com/webapp/wallet/v1.22.0/static/media/NZ.ed79b025.svg" alt="AU" style="margin-right: 24px; height: 24px; width: 24px;">
+                                <div>
+                                    <h5>NZD</h5>
+                                    <span>New Zealand Dollar</span>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td style="display: flex;">
+                                <h5 style="margin-right: 1rem;">$0.00 NZD</h5>
+                                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 32 32" fill="#612FFF" square="16"><g fill="none" fill-rule="evenodd"><path fill="#612FFF" d="M4,12 C6.209139,12 8,13.790861 8,16 C8,18.209139 6.209139,20 4,20 C1.790861,20 0,18.209139 0,16 C0,13.790861 1.790861,12 4,12 Z M16,12 C18.209139,12 20,13.790861 20,16 C20,18.209139 18.209139,20 16,20 C13.790861,20 12,18.209139 12,16 C12,13.790861 13.790861,12 16,12 Z M28,12 C30.209139,12 32,13.790861 32,16 C32,18.209139 30.209139,20 28,20 C25.790861,20 24,18.209139 24,16 C24,13.790861 25.790861,12 28,12 Z"></path></g></svg></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="display: flex;">
+                                <img src="https://static.airwallex.com/webapp/wallet/v1.22.0/static/media/SG.6405dd6a.svg" alt="AU" style="margin-right: 24px; height: 24px; width: 24px;">
+                                <div>
+                                    <h5>SGD</h5>
+                                    <span>Singapore Dollar</span>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td style="display: flex;">
+                                <h5 style="margin-right: 1rem;">$0.00 SGD</h5>
+                                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 32 32" fill="#612FFF" square="16"><g fill="none" fill-rule="evenodd"><path fill="#612FFF" d="M4,12 C6.209139,12 8,13.790861 8,16 C8,18.209139 6.209139,20 4,20 C1.790861,20 0,18.209139 0,16 C0,13.790861 1.790861,12 4,12 Z M16,12 C18.209139,12 20,13.790861 20,16 C20,18.209139 18.209139,20 16,20 C13.790861,20 12,18.209139 12,16 C12,13.790861 13.790861,12 16,12 Z M28,12 C30.209139,12 32,13.790861 32,16 C32,18.209139 30.209139,20 28,20 C25.790861,20 24,18.209139 24,16 C24,13.790861 25.790861,12 28,12 Z"></path></g></svg></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="display: flex;">
+                                <img src="https://static.airwallex.com/webapp/wallet/v1.22.0/static/media/US.13d7ddef.svg" style="margin-right: 24px; height: 24px; width: 24px;">
+                                <div>
+                                    <h5>USD</h5>
+                                    <span>United States Dollar</span>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td style="display: flex;">
+                                <h5 style="margin-right: 1rem;">$0.00 USD</h5>
+                                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 32 32" fill="#612FFF" square="16"><g fill="none" fill-rule="evenodd"><path fill="#612FFF" d="M4,12 C6.209139,12 8,13.790861 8,16 C8,18.209139 6.209139,20 4,20 C1.790861,20 0,18.209139 0,16 C0,13.790861 1.790861,12 4,12 Z M16,12 C18.209139,12 20,13.790861 20,16 C20,18.209139 18.209139,20 16,20 C13.790861,20 12,18.209139 12,16 C12,13.790861 13.790861,12 16,12 Z M28,12 C30.209139,12 32,13.790861 32,16 C32,18.209139 30.209139,20 28,20 C25.790861,20 24,18.209139 24,16 C24,13.790861 25.790861,12 28,12 Z"></path></g></svg></a>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </section>
+
+        </div>
+    </div>
+
+</body>
+<script>
+    flag = false;
+    $(document).ready(function() {
+        $('#drop').on("click", function() {
+            if (flag == false) {
+                $('#target').show();
+                flag = true;
+            } else {
+                $('#target').hide();
+                flag = false;
+            }
+        })
+    })
+</script>
+
+</html>

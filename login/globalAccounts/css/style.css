@@ -189,6 +189,11 @@ nav ul li a h2 {
     -webkit-text-fill-color: transparent;
 }
 
+.active-items {
+    padding-left: 3rem;
+    margin-top: 0;
+}
+
 
 /* end ul */
 
@@ -269,6 +274,9 @@ nav ul li a h2 {
     }
     .bot {
         display: none;
+    }
+    .active-items {
+        padding-left: 2rem;
     }
 }
 
@@ -431,31 +439,6 @@ h1 {
     margin: 0px;
 }
 
-
-/* end */
-
-.box-c {
-    margin-top: 4rem;
-}
-
-.box {
-    padding: 2rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid rgb(232, 234, 237);
-    border-radius: 6px;
-    box-shadow: rgb(0 0 0 / 8%) 0px 0px 16px 0px;
-}
-
-.info {
-    margin: auto 20px;
-}
-
-.info-2 {
-    margin: auto 0;
-    min-width: 162.38px;
-}
-
 .btn-1 {
     color: rgb(255, 255, 255);
     background-color: rgb(97, 47, 255);
@@ -464,47 +447,18 @@ h1 {
     font-size: 14px;
     font-weight: bold;
     min-width: 150px;
-}
-
-.btn-2{
-    padding: 8px 17px;
-    border-radius: 6px;
-    border-width: 0px;
-    border-style: none;
     cursor: pointer;
-    min-height: 40px;
-    min-width: 40px;
-    font-size: 14px;
-    font-weight: bold;
-    color: rgb(97, 47, 255);
-    background: white;
-    box-shadow: rgb(209 210 213) 0px 0px 0px 1px inset;
+    max-height: 40px;
 }
 
-.flex{
+.fila {
     display: flex;
-    justify-content: space-between;
+    margin-top: 4rem;
 }
 
-.link{
-    font-size: 14px;
-    font-weight: bold;
-    line-height: 1.5;
-    margin-top: 2rem;
-    color: rgb(97, 47, 255);
-}
-
-.form-1{
-    border: 1px solid rgb(232, 234, 237);
-    border-radius: 6px;
-    padding: 16px;
-}
-
-.form-group{
-    border: 1px solid rgb(232, 234, 237);
-    border-radius: 6px;
-    padding: 8px;
-    background: rgba(0, 0, 0, 0.016);
+.imagen {
+    max-width: 790px;
+    max-height: 691px;
 }
 
 @media (max-width:720px) {
@@ -529,13 +483,7 @@ h1 {
     h1 {
         font-size: 24px;
     }
-    .box{
+    .fila {
         display: block;
-    }
-    .info-2{
-        margin: 2rem 0;
-    }
-    .form-1{
-        margin-top: 2rem;
     }
 }

@@ -189,6 +189,11 @@ nav ul li a h2 {
     -webkit-text-fill-color: transparent;
 }
 
+.active-items {
+    padding-left: 3rem;
+    margin-top: 0;
+}
+
 
 /* end ul */
 
@@ -269,6 +274,9 @@ nav ul li a h2 {
     }
     .bot {
         display: none;
+    }
+    .active-items {
+        padding-left: 2rem;
     }
 }
 
@@ -464,9 +472,11 @@ h1 {
     font-size: 14px;
     font-weight: bold;
     min-width: 150px;
+    cursor: pointer;
+    max-height: 40px;
 }
 
-.btn-2{
+.btn-2 {
     padding: 8px 17px;
     border-radius: 6px;
     border-width: 0px;
@@ -474,6 +484,7 @@ h1 {
     cursor: pointer;
     min-height: 40px;
     min-width: 40px;
+    max-height: 40px;
     font-size: 14px;
     font-weight: bold;
     color: rgb(97, 47, 255);
@@ -481,12 +492,7 @@ h1 {
     box-shadow: rgb(209 210 213) 0px 0px 0px 1px inset;
 }
 
-.flex{
-    display: flex;
-    justify-content: space-between;
-}
-
-.link{
+.link {
     font-size: 14px;
     font-weight: bold;
     line-height: 1.5;
@@ -494,17 +500,21 @@ h1 {
     color: rgb(97, 47, 255);
 }
 
-.form-1{
+
+/* table */
+
+tr {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
     border: 1px solid rgb(232, 234, 237);
     border-radius: 6px;
-    padding: 16px;
+    box-shadow: rgb(0 0 0 / 8%) 0px 0px 16px 0px;
 }
 
-.form-group{
-    border: 1px solid rgb(232, 234, 237);
-    border-radius: 6px;
-    padding: 8px;
-    background: rgba(0, 0, 0, 0.016);
+h5 {
+    font-size: 14px;
+    font-weight: bold;
 }
 
 @media (max-width:720px) {
@@ -529,13 +539,13 @@ h1 {
     h1 {
         font-size: 24px;
     }
-    .box{
+    .box {
         display: block;
     }
-    .info-2{
+    .info-2 {
         margin: 2rem 0;
     }
-    .form-1{
+    .form-1 {
         margin-top: 2rem;
     }
 }
