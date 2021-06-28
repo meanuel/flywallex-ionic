@@ -189,6 +189,11 @@ nav ul li a h2 {
     -webkit-text-fill-color: transparent;
 }
 
+.active-items {
+    padding-left: 3rem;
+    margin-top: 0;
+}
+
 
 /* end ul */
 
@@ -269,6 +274,9 @@ nav ul li a h2 {
     }
     .bot {
         display: none;
+    }
+    .active-items {
+        padding-left: 2rem;
     }
 }
 
@@ -464,6 +472,8 @@ h1 {
     font-size: 14px;
     font-weight: bold;
     min-width: 150px;
+    cursor: pointer;
+    max-height: 40px;
 }
 
 .btn-2 {
@@ -474,16 +484,12 @@ h1 {
     cursor: pointer;
     min-height: 40px;
     min-width: 40px;
+    max-height: 40px;
     font-size: 14px;
     font-weight: bold;
     color: rgb(97, 47, 255);
     background: white;
     box-shadow: rgb(209 210 213) 0px 0px 0px 1px inset;
-}
-
-.flex {
-    display: flex;
-    justify-content: space-between;
 }
 
 .link {
@@ -494,17 +500,21 @@ h1 {
     color: rgb(97, 47, 255);
 }
 
-.form-1 {
+
+/* table */
+
+tr {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
     border: 1px solid rgb(232, 234, 237);
     border-radius: 6px;
-    padding: 16px;
+    box-shadow: rgb(0 0 0 / 8%) 0px 0px 16px 0px;
 }
 
-.form-group {
-    border: 1px solid rgb(232, 234, 237);
-    border-radius: 6px;
-    padding: 8px;
-    background: rgba(0, 0, 0, 0.016);
+h5 {
+    font-size: 14px;
+    font-weight: bold;
 }
 
 @media (max-width:720px) {
@@ -537,75 +547,5 @@ h1 {
     }
     .form-1 {
         margin-top: 2rem;
-    }
-}
-
-
-/* nuevo */
-
-.box-bandera {
-    padding: 16px;
-    background: white;
-    color: black;
-    cursor: pointer;
-    border-radius: 10px;
-}
-
-.box-bandera:hover {
-    background: #F0EFFF;
-    transition: all 0.5s;
-}
-
-.bandera {
-    display: flex;
-    align-items: center;
-}
-
-.bandera img {
-    width: 30px;
-    height: 30px;
-}
-
-.bandera h1 {
-    font-size: 16px;
-    font-weight: bold;
-    margin-left: 0.5rem;
-}
-
-.box-2 {
-    display: flex;
-}
-
-.box-2 h2 {
-    font-weight: bold;
-    font-size: 18px;
-    margin: 0;
-}
-
-.box-2 .box-c {
-    width: 50%;
-    margin-right: 0.5rem;
-}
-
-.boxNd {
-    display: block;
-    padding: 2rem 2rem;
-    border: 1px solid rgb(232, 234, 237);
-    border-radius: 6px;
-    box-shadow: rgb(0 0 0 / 8%) 0px 0px 16px 0px;
-    height: 431px;
-}
-
-@media (max-width: 720px) {
-    .box-bandera {
-        display: flex;
-        justify-content: space-between;
-    }
-    .box-2 {
-        display: block;
-    }
-    .box-2 .box-c {
-        width: 100%;
-        margin-right: 0.5rem;
     }
 }
