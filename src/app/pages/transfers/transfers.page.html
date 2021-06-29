@@ -1,9 +1,43 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>transfers</ion-title>
-  </ion-toolbar>
-</ion-header>
+<div class="root">
+    <app-navbar></app-navbar>
 
-<ion-content>
+    <div class="content">
+        <div class="header">
+            <div class="title">
+                <h2>Payment activity</h2>
+            </div>
+            <div class="profile">
+                <div class="profile-cont">
+                    <h3>jeespoping@gmail.com</h3>
+                </div>
+            </div>
+            <div id="drop" class="drop">
+                <i class="far fa-user-circle"></i>
+            </div>
+            <ul id="target">
+                <li class="owner">owner</li>
+                <li><a href="#"><i class="fal fa-user-alt"></i>  Profile</a></li>
+                <li><a href="#"><i class="far fa-life-ring"></i>  Help</a></li>
+                <li><a href="#"><i class="fas fa-power-off"></i>  Log out</a></li>
+            </ul>
+        </div>
 
-</ion-content>
+        <section>
+            <div class="box-1">
+                <h1 class="active-header">Payments</h1>
+            </div>
+            <div class="table-responsive">
+                <div class="header-table">
+                    <select name="table-select">
+                    <option value="all" selected>All status</option>
+                    <option value="funds">Funds Pending</option>
+                  </select>
+                    <div>
+                        <button class="btn-1"><i class="fal fa-download"></i> Export</button>
+                        <button class="btn-1"><i class="fal fa-sort-amount-up-alt"></i> Filters</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
