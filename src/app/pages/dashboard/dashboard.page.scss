@@ -72,24 +72,6 @@
 }
 
 @media (max-width:720px) {
-    .checkbtn {
-        display: flex;
-    }
-    .title {
-        margin-left: 60px !important;
-    }
-    .cont-nav {
-        left: -100%;
-        position: fixed;
-        height: 100vh;
-        top: 70px;
-    }
-    #check:checked~.cont-nav {
-        left: 0;
-    }
-    .profile {
-        display: none !important;
-    }
     h1 {
         font-size: 24px;
     }

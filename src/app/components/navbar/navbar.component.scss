@@ -115,7 +115,7 @@ nav ul li {
     margin-top: 4px;
 }
 
-nav ul li a {
+nav ul li button {
     display: flex;
     -webkit-box-align: center;
     align-items: center;
@@ -126,13 +126,14 @@ nav ul li a {
     text-align: left;
     width: max-content;
     color: rgb(215, 219, 224);
+    background-color: transparent;
 }
 
-nav ul li a:hover {
+nav ul li button:hover {
     color: white;
 }
 
-nav ul li a span {
+nav ul li button span {
     display: flex;
     -webkit-box-pack: center;
     justify-content: center;
@@ -144,7 +145,7 @@ nav ul li a span {
     font-weight: bold;
 }
 
-nav ul li a h2 {
+nav ul li button h2 {
     font-size: 14px;
     line-height: 1.5;
     white-space: nowrap;
@@ -232,7 +233,7 @@ nav ul li a h2 {
     .user {
         display: none;
     }
-    nav ul li a h2 {
+    nav ul li button h2 {
         display: none;
     }
     .bot {

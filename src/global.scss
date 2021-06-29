@@ -88,6 +88,12 @@ body {
     padding-left: 4px;
 }
 
+.title h2 {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+}
+
 .profile {
     position: absolute;
     left: calc(100% - 40px);
@@ -189,5 +195,23 @@ section {
 @media (max-width:720px) {
     .header {
         position: fixed;
+    }
+    .checkbtn {
+        display: flex;
+    }
+    .title {
+        margin-left: 60px !important;
+    }
+    .cont-nav {
+        left: -100%;
+        position: fixed;
+        height: 100vh;
+        top: 70px;
+    }
+    #check:checked~.cont-nav {
+        left: 0;
+    }
+    .profile {
+        display: none !important;
     }
 }
