@@ -1,0 +1,134 @@
+section {
+    width: 100%;
+}
+
+.btn-end {
+    display: flex;
+    height: 40px;
+    margin-top: 4rem;
+    margin-bottom: 40px;
+    justify-content: flex-end;
+}
+
+.btn-2 {
+    padding: 8px 17px;
+    border-radius: 6px;
+    border-width: 0px;
+    min-height: 40px;
+    min-width: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background-color: rgb(97, 47, 255);
+}
+
+.contente {
+    border: 1px solid rgb(232, 234, 237);
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0 / 8%) 0px 0px 16px 0px;
+    margin-bottom: 120px;
+}
+
+.input-group {
+    width: 100%;
+    margin-bottom: 16px;
+    display: flex;
+    background-color: rgb(252, 252, 253);
+    border: 1px solid rgb(235, 236, 240);
+    border-radius: 4px;
+    align-items: center;
+    height: 40px;
+    flex: 1 1 0%;
+}
+
+.input-group input {
+    width: 100%;
+    color: rgb(84, 84, 94);
+    border: 0px;
+    padding: 8px 16px;
+    height: 38px;
+}
+
+.lupa {
+    padding-left: 16px;
+    height: 38px;
+    padding-top: 5px;
+    padding-right: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.btn-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    padding: 0px 12px;
+    border-radius: 6px;
+    border: 1px solid rgb(235, 236, 240);
+    background: rgb(255, 255, 255);
+    font-weight: 400;
+    color: rgb(135, 135, 142);
+    font-size: 14px;
+    min-width: 24px;
+    margin-left: 8px;
+}
+
+tbody tr {
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+td {
+    height: 56px;
+    border-top: 1px solid rgb(235, 236, 240);
+    border-bottom: 1px solid rgb(235, 236, 240);
+    text-align: left;
+    padding-left: 40px;
+    width: auto;
+}
+
+td h1 {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(42, 42, 42);
+    white-space: nowrap;
+    display: inline-block;
+    padding: 4px 8px;
+    border: none;
+    border-radius: 4px;
+    background: rgb(224, 247, 231);
+}
+
+td button {
+    padding: 8px 17px;
+    border-radius: 6px;
+    border-width: 0px;
+    min-height: 40px;
+    min-width: 40px;
+    font-size: 7px;
+    font-weight: bold;
+    color: rgb(97, 47, 255);
+    background-color: transparent;
+}
+
+th {
+    font-size: 13px;
+    height: 56px;
+    text-align: left;
+    color: rgb(42, 42, 42);
+    padding-left: 40px;
+}
+
+.table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    margin-top: 1rem;
+    width: 100%;
+    min-width: 636px;
+}

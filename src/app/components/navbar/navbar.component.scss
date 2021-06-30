@@ -115,7 +115,7 @@ nav ul li {
     margin-top: 4px;
 }
 
-nav ul li button {
+nav ul li a {
     display: flex;
     -webkit-box-align: center;
     align-items: center;
@@ -129,11 +129,11 @@ nav ul li button {
     background-color: transparent;
 }
 
-nav ul li button:hover {
+nav ul li a:hover {
     color: white;
 }
 
-nav ul li button span {
+nav ul li a span {
     display: flex;
     -webkit-box-pack: center;
     justify-content: center;
@@ -145,7 +145,7 @@ nav ul li button span {
     font-weight: bold;
 }
 
-nav ul li button h2 {
+nav ul li a h2 {
     font-size: 14px;
     line-height: 1.5;
     white-space: nowrap;
@@ -180,7 +180,7 @@ nav ul li button h2 {
     flex-direction: row;
     -webkit-box-align: center;
     align-items: center;
-    z-index: 5;
+    z-index: 8;
     font-size: 18px;
     font-weight: bold;
     display: none;
@@ -233,7 +233,7 @@ nav ul li button h2 {
     .user {
         display: none;
     }
-    nav ul li button h2 {
+    nav ul li a h2 {
         display: none;
     }
     .bot {
