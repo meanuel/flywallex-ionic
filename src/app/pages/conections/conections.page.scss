@@ -1,0 +1,94 @@
+.titlee{
+    margin-top: 4rem;
+    display: block;
+}
+
+.titlee h1{
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0px;
+}
+
+.titlee p{
+    font-size: 14px;
+    color: rgb(66, 71, 77);
+    margin: 0px;
+}
+
+.plataforms{
+    margin-top: 2rem;    
+}
+
+.plataforms h1{
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0px;
+}
+
+.row{
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.row a{
+    display: block;
+    padding: 0px;
+    font: inherit;
+    color: inherit;
+    background: none;
+    text-align: left;
+    text-decoration: none;
+    outline: none;
+    position: relative;
+    border: 1px solid rgb(232, 234, 237);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.image{
+    height: 160px;
+    padding-top: calc(61px);
+    padding-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgb(232, 234, 237);
+}
+
+.image img{
+    display: block;
+    width: 120px;
+    height: 64px;
+}
+
+.body{
+    padding: 24px;
+}
+
+.body h4{
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0px;
+}
+
+.body p{
+    font-size: 14px;
+    color: rgb(108, 116, 127);
+    margin: 8px 0px 0px;
+}
+
+@media (max-width: 1020px){
+    .row {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        margin-top: 16px;
+    }
+}
+
+@media (max-width: 720px){
+    .row {
+        grid-template-columns: 1fr;
+    }
+}

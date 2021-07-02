@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { ConectionsPageRoutingModule } from './conections-routing.module';
 
 import { ConectionsPage } from './conections.page';
+import { ComponentsModule } from 'src/app/components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ConectionsPageRoutingModule
+    ConectionsPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [ConectionsPage]
 })

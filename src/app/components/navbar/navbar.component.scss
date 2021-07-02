@@ -253,6 +253,7 @@ nav ul li a h2 {
         position: fixed;
         height: 100vh;
         top: 70px;
+        z-index: 1;
     }
     #check:checked~.cont-nav {
         left: 0;

@@ -111,5 +111,12 @@ tbody tr:hover {
     box-shadow: rgb(84 84 94 / 10%) 0px -5px 10px;
 }
 
-// @media (max-width:720px) {
-// }
+@media (max-width:720px) {
+    .header-table{
+        display: block;     
+    }
+
+    .header-table div{
+        margin-top: 1rem;
+    }
+}
