@@ -35,6 +35,10 @@ const routes: Routes = [
     path: 'account',
     loadChildren: () => import('./pages/account/account.module').then( m => m.AccountPageModule)
   },
+  {
+    path: 'card-settings',
+    loadChildren: () => import('./pages/card-settings/card-settings.module').then( m => m.CardSettingsPageModule)
+  },
 ];
 
 @NgModule({

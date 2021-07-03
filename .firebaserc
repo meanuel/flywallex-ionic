@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "flywallex"
+    "default": "flywallex",
+    "n": "flywallex-6379e"
   }
 }
